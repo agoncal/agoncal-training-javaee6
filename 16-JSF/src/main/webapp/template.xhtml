@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xml:lang="en" lang="en">
+
+<h:head>
+    <title>
+        <ui:insert name="title">Default title</ui:insert>
+    </title>
+</h:head>
+<h:body>
+    <h:outputStylesheet name="styles.css"/>
+    <hr/>
+    <table border="0">
+        <h:form>
+            <tr>
+                <td>
+                    <h:link value="Create a book" outcome="newBook.xhtml"/>
+                </td>
+                <td>
+                    <h:link value="Create a CD" outcome="newCD.xhtml"/>
+                </td>
+            </tr>
+        </h:form>
+    </table>
+    <h1>
+        <ui:insert name="title">Default title</ui:insert>
+    </h1>
+    <hr/>
+
+    <h:messages id="errors" style="color:red"/>
+    <ui:insert name="content">Default content</ui:insert>
+
+    <hr/>
+    <em>Training Java EE 6 - Lab16 - Beginning with The Java EE 6 Platform</em>
+</h:body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.agoncal.training.javaee6</groupId>
+    <artifactId>16-JSF</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+    <name>16 - JSF</name>
+
+    <parent>
+        <groupId>org.agoncal.training.javaee6</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <dependencies>
+        <!--This has most of the needed dependencies : Derby, JPA, EJB, Java EE 6...-->
+        <dependency>
+            <groupId>org.glassfish.main.extras</groupId>
+            <artifactId>glassfish-embedded-all</artifactId>
+            <version>${version.glassfish}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>cdbookstore</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${version.maven.war.plugin}</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <!-- Run : mvn clean package embedded-glassfish:run -->
+            <!-- if you want to skip test : mvn -Dmaven.test.skip=true clean package embedded-glassfish:run -->
+            <!--     consider increasing PermGen : export MAVEN_OPTS=-XX:MaxPermSize=128m  -->
+            <!-- and go to http://localhost:8080/cdbookstore/ -->
+            <plugin>
+                <groupId>org.glassfish</groupId>
+                <artifactId>maven-embedded-glassfish-plugin</artifactId>
+                <version>${version.maven.embedded.glassfish.plugin}</version>
+                <configuration>
+                    <app>${project.build.directory}/${project.build.finalName}.war</app>
+                    <port>8080</port>
+                    <contextRoot>${project.build.finalName}</contextRoot>
+                    <name>${project.build.finalName}</name>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

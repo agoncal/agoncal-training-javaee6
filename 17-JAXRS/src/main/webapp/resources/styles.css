@@ -1,0 +1,30 @@
+body {
+    color: #4f6b72;
+    background: #E6EAE9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    width: 150px;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+}
+
+input {
+    width: 200px;
+}
+
+textarea {
+    width: 200px;
+    height: 80px;
+}
+
+.oddRow {
+
+}
+
+.evenRow {
+    background-color: #c6d0cd;
+}

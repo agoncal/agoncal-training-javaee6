@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:demo="http://java.sun.com/jsf/composite/demo">
+
+<ui:composition template="template.xhtml">
+
+    <ui:define name="title">Create a new CD</ui:define>
+
+    <ui:define name="content">
+
+        <h:form id="cdForm" style="background-image:url(#{resource['musiccd.png']});">
+            <demo:newItem item="#{itemController.cd}"/>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Music company : "/>
+                <h:inputText value="#{itemController.cd.musicCompany}"/>
+
+                <h:outputLabel value="Number Of CDs : "/>
+                <h:inputText value="#{itemController.cd.numberOfCDs}"/>
+
+                <h:outputLabel value="Total Duration : "/>
+                <h:inputText value="#{itemController.cd.totalDuration}"/>
+
+                <h:outputLabel value="Genre : "/>
+                <h:inputText value="#{itemController.cd.genre}"/>
+            </h:panelGrid>
+
+            <h:commandButton value="Create a CD" action="#{itemController.doCreateCD}">
+                <f:ajax execute="@form" render=":cdlist :errors"/>
+            </h:commandButton>
+
+        </h:form>
+
+        <hr/>
+        <h1>List of CDs</h1>
+        <hr/>
+        <h:dataTable id="cdlist" value="#{itemController.cdList}" var="cd" border="1" rowClasses="evenRow, oddRow">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="ID"/>
+                </f:facet>
+                <h:outputText value="#{cd.id}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Title"/>
+                </f:facet>
+                <h:outputText value="#{cd.title}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Price"/>
+                </f:facet>
+                <h:outputText value="#{cd.price}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Description"/>
+                </f:facet>
+                <h:outputText value="#{cd.description}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Music Company"/>
+                </f:facet>
+                <h:outputText value="#{cd.musicCompany}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Number Of CDs"/>
+                </f:facet>
+                <h:outputText value="#{cd.numberOfCDs}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Total Duration"/>
+                </f:facet>
+                <h:outputText value="#{cd.totalDuration}"/>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Genre"/>
+                </f:facet>
+                <h:outputText value="#{cd.genre}"/>
+            </h:column>
+        </h:dataTable>
+    </ui:define>
+
+</ui:composition>
+</html>

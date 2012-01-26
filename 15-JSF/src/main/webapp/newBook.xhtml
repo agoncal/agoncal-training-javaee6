@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:demo="http://java.sun.com/jsf/composite/demo">
+
+<ui:composition template="template.xhtml">
+
+    <ui:define name="title">Create a new book</ui:define>
+
+    <ui:define name="content">
+
+        <h:form id="bookForm" style="background-image:url(#{resource['book.png']});">
+            <demo:newItem/>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Number of pages : "/>
+                <h:inputText value="Dummy nb page"/>
+
+                <h:outputLabel value="Illustrations : "/>
+                <h:selectBooleanCheckbox value="true"/>
+
+                <h:outputLabel value="Tags : "/>
+                <h:inputText value="Dummy tags"/>
+
+                <h:outputLabel value="Language code : "/>
+                <h:inputText value="Dummy language"/>
+            </h:panelGrid>
+
+            <h:button value="Create a book" outcome="newBook.xhtml"/>
+
+        </h:form>
+
+        <hr/>
+        <h1>List of books</h1>
+        <hr/>
+        <h:dataTable id="booklist" border="1" rowClasses="evenRow, oddRow">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="ID"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="ISBN"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Title"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Price"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Language"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Description"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Number Of Pages"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Illustrations"/>
+                </f:facet>
+            </h:column>
+
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Tags"/>
+                </f:facet>
+            </h:column>
+        </h:dataTable>
+    </ui:define>
+
+</ui:composition>
+</html>
