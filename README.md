@@ -4,13 +4,13 @@
 
 Member of Java Community Process on Java EE 6 and Java EE 7, [Antonio](http://www.antoniogoncalves.org) is primarily a hands on man (who advises his customers and develops their architectures).
 
-Co-leader of the [Paris Java User Group](http://www.parisjug.org), co-creator of [Devoxx France](http://www.devoxx.fr), animator of the French Java podcast [Les CastCodeurs](http://http://lescastcodeurs.com/) and [Java Champion](http://http://java-champions.java.net/), he will share his experience and passion for architectures.
+Co-leader of the [Paris Java User Group](http://www.parisjug.org), co-creator of [Devoxx France](http://www.devoxx.fr), animator of the French Java podcast [Les CastCodeurs](http://lescastcodeurs.com/) and [Java Champion](http://java-champions.java.net/), he will share his experience and passion for architectures.
 
 Antonio is the author of the Java EE 5 and Java EE 6 books.
 
 ### Presentation of the course
 
-[Java EE 6](http://http://jcp.org/en/jsr/summary?id=316) is a simple yet complete platform to build your application. It went all the way through EJB 1.0 with Home, Factories, RMI/IIOP... to simple injectable POJOs running on lightweight containers. Patterns of yesterday became anti-patterns and layering out of fashion.
+[Java EE 6](http://jcp.org/en/jsr/summary?id=316) is a simple yet complete platform to build your application. It went all the way through EJB 1.0 with Home, Factories, RMI/IIOP... to simple injectable POJOs running on lightweight containers. Patterns of yesterday became anti-patterns and layering out of fashion.
 
 This 3 days training aims to demystify the new Java EE platform. It combines presentations and hands-on labs to develop a comprehensive application with emphasis on good architecture. Patterns of yesterday becoming today's anti-pattern, the race of decoupling and over layering ... you will learn to use the technical blocks of Java EE 6 (JPA 2.0, EJB 3.1, JSF 2.0, Bean Validation 1.0, CDI 1.0 and JAX-RS 1.0) to best meet the needs of your users. For this training to better meet your expectations, you will have to fill out a brief form to adjust the training to the level of the group.
 
