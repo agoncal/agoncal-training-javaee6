@@ -22,8 +22,8 @@
 
             <property name="eclipselink.logging.level" value="INFO"/>
             <property name="eclipselink.target-database" value="DERBY"/>
-            <property name="eclipselink.ddl-generation" value="create-tables"/>
-            <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+            <!--<property name="eclipselink.ddl-generation" value="create-tables"/>-->
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
         </properties>
     </persistence-unit>
 </persistence>
