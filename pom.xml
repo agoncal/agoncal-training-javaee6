@@ -28,10 +28,10 @@
 
     <properties>
         <version.junit>4.10</version.junit>
-        <version.glassfish>3.1.2-b18</version.glassfish>
+        <version.glassfish>3.1.2.2</version.glassfish>
         <version.maven.embedded.glassfish.plugin>3.1.1</version.maven.embedded.glassfish.plugin>
-        <version.maven.war.plugin>2.1.1</version.maven.war.plugin>
-        <version.maven.compiler.plugin>2.3.2</version.maven.compiler.plugin>
+        <version.maven.war.plugin>2.2</version.maven.war.plugin>
+        <version.maven.compiler.plugin>2.5.1</version.maven.compiler.plugin>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
