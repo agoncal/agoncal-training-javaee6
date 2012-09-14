@@ -4,7 +4,8 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:demo="http://java.sun.com/jsf/composite/demo">
+      xmlns:demo="http://java.sun.com/jsf/composite/demo"
+      xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="template.xhtml">
 
@@ -30,6 +31,11 @@
             </h:panelGrid>
 
             <h:button value="Create a book" outcome="newBook.xhtml"/>
+
+            <!--Prime Faces components-->
+            <p:colorPicker id="inlineCP" mode="inline" />
+            <p:calendar mode="inline" id="inlineCal"/>
+            <p:calendar id="cal" mode="inline" pages="3" />
 
         </h:form>
 

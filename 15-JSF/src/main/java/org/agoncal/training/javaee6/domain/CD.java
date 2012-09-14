@@ -24,9 +24,9 @@ public class CD extends Item {
     // =             Attributes             =
     // ======================================
 
-    @Pattern(regexp = "[A-Z][a-z]{1,}")
+    @Pattern(regexp = "[A-Z][a-z]{1,}", message = "{music.company}")
     private String musicCompany;
-    @Max(5)
+    @Max(value=5, message = "{number.cds}")
     private Integer numberOfCDs;
     private Float totalDuration;
     @MusicGenre

@@ -24,7 +24,7 @@ public class Item {
     @GeneratedValue
     protected Long id;
     @NotNull
-    @Size(min = 4, max = 50, message = "Title length should be between {min} and {max}")
+    @Size(min = 4, max = 50, message = "{title}")
     @Column(nullable = false)
     protected String title;
     protected Float price;

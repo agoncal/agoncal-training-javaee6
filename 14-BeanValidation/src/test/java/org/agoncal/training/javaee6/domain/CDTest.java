@@ -100,7 +100,7 @@ public class CDTest {
 
         // Validate the cd
         Set<ConstraintViolation<CD>> constraints = validator.validate(cd);
-        assertEquals(3, constraints.size());
+        assertEquals(2, constraints.size());
     }
 
     @Test
