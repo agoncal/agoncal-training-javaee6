@@ -35,6 +35,11 @@ I mostly give this course in Europe (France/Luxembourg/Germany/UK) on site, [con
 
 The aim of this training course is to learn Java EE 6 while running some code. In an incremental way you will slowly build a web site to CRUD books and CDs through a JSF UI and REST interface. It is a bottom/up approch so in the first labs you will develop the JPA domain  model and then add EJB façades, REST, JSF with the help of Bean Validation and CDI.
 
-<div class="footer">
-    <span class="footerTitle"><span class="uc">a</span>ntonio <span class="uc">g</span>oncalves</span>
-</div>
+# Licensing
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+
+Book - Beginning Java EE 6 with Glassfish
+Antonio Goncalves
+--
+--
