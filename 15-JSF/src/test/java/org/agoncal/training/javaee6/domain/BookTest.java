@@ -20,8 +20,8 @@ public class BookTest {
     // =             Attributes             =
     // ======================================
 
-    protected static ValidatorFactory vf;
-    protected static Validator validator;
+    private static ValidatorFactory vf;
+    private static Validator validator;
 
     // ======================================
     // =          Lifecycle Methods         =
