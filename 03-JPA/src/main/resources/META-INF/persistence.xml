@@ -5,16 +5,16 @@
              version="2.0">
     <persistence-unit name="trainingPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>org.agoncal.training.javaee6.Book</class>
+        <class>org.agoncal.training.javaee.Book</class>
         <properties>
             <!-- Embedded mode -->
-            <!--<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>-->
-            <!--<property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:lab03DB;create=true"/>-->
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:lab03DB;create=true"/>
             <!-- Client Server mode -->
-            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/lab03DB;create=true"/>
-            <property name="javax.persistence.jdbc.user" value="APP"/>
-            <property name="javax.persistence.jdbc.password" value="APP"/>
+            <!--<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>-->
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/lab03DB;create=true"/>-->
+            <!--<property name="javax.persistence.jdbc.user" value="APP"/>-->
+            <!--<property name="javax.persistence.jdbc.password" value="APP"/>-->
 
             <property name="eclipselink.logging.level" value="INFO"/>
             <property name="eclipselink.target-database" value="DERBY"/>
