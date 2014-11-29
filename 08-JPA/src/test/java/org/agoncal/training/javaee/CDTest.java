@@ -1,5 +1,7 @@
 package org.agoncal.training.javaee;
 
+import org.agoncal.training.javaee.model.CD;
+import org.agoncal.training.javaee.model.Track;
 import org.junit.Test;
 
 import java.util.ArrayList;

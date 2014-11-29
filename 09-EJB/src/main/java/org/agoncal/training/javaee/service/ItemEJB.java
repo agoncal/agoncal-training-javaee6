@@ -1,8 +1,8 @@
 package org.agoncal.training.javaee.service;
 
-import org.agoncal.training.javaee.domain.Book;
-import org.agoncal.training.javaee.domain.CD;
-import org.agoncal.training.javaee.domain.Item;
+import org.agoncal.training.javaee.model.Book;
+import org.agoncal.training.javaee.model.CD;
+import org.agoncal.training.javaee.model.Item;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

@@ -1,6 +1,6 @@
 package org.agoncal.training.javaee;
 
-import org.agoncal.training.javaee.domain.*;
+import org.agoncal.training.javaee.model.*;
 import org.agoncal.training.javaee.service.ItemEJB;
 
 import javax.ejb.embeddable.EJBContainer;

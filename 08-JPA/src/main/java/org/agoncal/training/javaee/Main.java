@@ -1,5 +1,7 @@
 package org.agoncal.training.javaee;
 
+import org.agoncal.training.javaee.model.*;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

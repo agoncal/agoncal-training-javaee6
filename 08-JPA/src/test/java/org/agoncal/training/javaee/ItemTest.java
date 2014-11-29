@@ -1,5 +1,6 @@
 package org.agoncal.training.javaee;
 
+import org.agoncal.training.javaee.model.Item;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,5 +1,9 @@
 package org.agoncal.training.javaee;
 
+import org.agoncal.training.javaee.model.Book;
+import org.agoncal.training.javaee.model.Chapter;
+import org.agoncal.training.javaee.model.Language;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;

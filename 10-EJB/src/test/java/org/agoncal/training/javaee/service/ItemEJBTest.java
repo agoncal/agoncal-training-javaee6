@@ -1,6 +1,6 @@
 package org.agoncal.training.javaee.service;
 
-import org.agoncal.training.javaee.domain.*;
+import org.agoncal.training.javaee.model.*;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

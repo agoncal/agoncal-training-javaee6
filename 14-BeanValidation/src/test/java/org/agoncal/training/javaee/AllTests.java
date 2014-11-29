@@ -1,7 +1,7 @@
 package org.agoncal.training.javaee;
 
-import org.agoncal.training.javaee.domain.BookTest;
-import org.agoncal.training.javaee.domain.CDTest;
+import org.agoncal.training.javaee.model.BookTest;
+import org.agoncal.training.javaee.model.CDTest;
 import org.agoncal.training.javaee.service.IsbnGeneratorTest;
 import org.agoncal.training.javaee.service.ItemEJBTest;
 import org.junit.runner.RunWith;
