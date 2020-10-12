@@ -27,7 +27,7 @@
     </modules>
 
     <properties>
-        <version.junit>4.11</version.junit>
+        <version.junit>4.13.1</version.junit>
         <version.glassfish>3.1.2.2</version.glassfish>
         <version.maven.embedded.glassfish.plugin>3.1.1</version.maven.embedded.glassfish.plugin>
         <version.maven.war.plugin>2.2</version.maven.war.plugin>
